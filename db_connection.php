@@ -17,7 +17,7 @@ if ($is_local) {
 try {
     $pdo = new PDO($dsn, $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo 'データベース接続成功！';
+  
 } catch (PDOException $e) {
     echo 'データベース接続エラー: ' . $e->getMessage();
 }

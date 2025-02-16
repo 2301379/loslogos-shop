@@ -89,7 +89,7 @@
                     <input type="email" id="email" name="email" placeholder="メールアドレス" required>
                 </div>
             </div>
-            <button type="submit">支払いへ進む</button>
+            <button type="submit">購入する</button>
         </form>
 
     </div>
