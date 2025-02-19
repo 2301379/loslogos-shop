@@ -41,7 +41,7 @@
             echo "<h1>カートの中身</h1>";
             echo "<table border='1'>";
             echo "<thead>";
-            echo "<tr><th>商品名</th><th>価格</th><th>数量</th><th>小計</th><th>操作</th></tr>";
+            echo "<tr><th>商品名</th><th>サイズ</th><th>価格</th><th>数量</th><th>小計</th><th>操作</th></tr>";
             echo "</thead>";
             echo "<tbody>";
 
@@ -51,6 +51,7 @@
 
                 echo "<tr>";
                 echo "<td>{$item['product_name']}</td>";
+                echo "<td>{$item['size']}</td>";  // サイズ情報を表示
                 echo "<td>{$item['price']}円</td>";
                 echo "<td>{$item['quantity']}</td>";
                 echo "<td>{$subtotal}円</td>";
@@ -88,7 +89,7 @@
                     <input type="email" id="email" name="email" placeholder="メールアドレス" required>
                 </div>
             </div>
-            <button type="submit">支払いへ進む</button>
+            <button type="submit">購入する</button>
         </form>
 
     </div>

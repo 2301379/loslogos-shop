@@ -45,6 +45,13 @@
 
                         <input type="hidden" name="product_name" value="Loslogos pants">
                         <input type="hidden" name="price" value="7000">
+                        <label for="size">サイズ:</label>
+                        <select name="size" id="size" required>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
                         <label>数量: <input type="number" name="quantity" value="1" min="1"></label>
                         <button type="submit">カートに追加</button>
                     </form>
