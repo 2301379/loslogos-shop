@@ -9,7 +9,7 @@ if ($is_local) {
     $password = "";
 } else {
     // ロリポップ環境用接続設定
-    $dsn = "mysql:host=mysql313.phy.lolipop.lan;dbname=LAA1557214-loslogos;charset=utf8mb4";
+    $dsn = "mysql:host=mysql312.phy.lolipop.lan;dbname=LAA1557214-loslogos;charset=utf8mb4";
     $username = "LAA1557214";
     $password = "kurato331";
 }
