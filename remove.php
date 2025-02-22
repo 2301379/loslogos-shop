@@ -1,3 +1,6 @@
+<?php
+  session_start();
+  ?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -16,7 +19,7 @@
             </a>
         </div>
         <?php
-        session_start();
+      
 
         // GETパラメータの確認
         if (!isset($_GET['product_id']) || empty($_GET['product_id'])) {

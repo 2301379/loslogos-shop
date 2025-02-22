@@ -1,3 +1,6 @@
+<?php
+ session_start();
+ ?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -16,7 +19,7 @@
             </a>
         </div>
         <?php
-        session_start();
+       
         // 商品削除機能
         if (isset($_GET['remove_id'])) {
             $remove_id = filter_var($_GET['remove_id'], FILTER_SANITIZE_NUMBER_INT); // 入力値のサニタイズ

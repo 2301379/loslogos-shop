@@ -1,3 +1,7 @@
+<?php
+session_start();
+require_once('db_connection.php'); // DB接続
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -17,8 +21,7 @@
         </div>
 
         <?php
-        session_start();
-        require_once('db_connection.php'); // DB接続
+        
 
         // 商品削除機能（セッション & データベースから削除）
         if (isset($_GET['remove_id'])) {

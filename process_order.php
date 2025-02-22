@@ -1,4 +1,5 @@
 <?php
+session_start();
 // データベース接続情報
 $host = 'mysql312.phy.lolipop.lan'; // またはIPアドレスを使用
 $db = '	LAA1557214-loslogos';
@@ -14,7 +15,7 @@ try {
     $total_price = 0; // 合計金額を計算
 
     // カートの中身を取得（仮でセッションの例）
-    session_start();
+    
     $cart = $_SESSION['cart']; // ['product_id' => 数量]の形式
 
     // 注文データをordersテーブルに登録

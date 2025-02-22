@@ -1,3 +1,7 @@
+<?php
+session_start();
+require_once('db_connection.php'); // DB接続
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -19,8 +23,7 @@
             </a>
         </div>
         <?php
-        session_start();
-        require_once('db_connection.php'); // DB接続
+        
 
         // カートが空の場合、index.phpにリダイレクト
         if (empty($_SESSION['cart'])) {
