@@ -113,3 +113,25 @@ h3{
     align-items: center;
     justify-content: center;
 }
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .top-bar {
+        padding: 10px;
+    }
+    .site-title {
+        font-size: 1.2rem;
+    }
+    .cart-btn {
+        font-size: 1.2rem;
+        padding: 6px 12px;
+    }
+    .product-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* スマホでは2列 */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-container {
+        grid-template-columns: 2fr; /* スマホでは1列表示 */
+    }
+}

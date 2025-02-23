@@ -32,3 +32,25 @@ body.fade-in {
 p{
     color: white;
 }
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .container {
+        width: 90vw;
+        height: 50vh;
+        border-radius: 30px;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95vw;
+        height: 40vh;
+        border-radius: 20px;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
